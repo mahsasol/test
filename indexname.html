@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var fullName = "mahsa-soleimanzadeh"
-        var name= ""
-        var lastName= ""
-        var flag = false
 
-        
-        for (var i=0 ; i < fullName.length; i++) {
-           if (fullName[i] == "-") {
-            flag = true
-            continue
-           } 
-           else if (flag == false){
-            name += fullName[i]
-           } 
-           else if (flag == true){
-            lastName += fullName[i]
-           }
+        function split() {
+            var fullName = "mahsa-soleimanzadeh"
+            var name = ""
+            var lastName = ""
+            var flag = false
 
-           
+
+            for (var i = 0; i < fullName.length; i++) {
+                if (fullName[i] == "-") {
+                    flag = true
+                    continue
+                }
+                else if (flag == false) {
+                    name += fullName[i]
+                }
+                else if (flag == true) {
+                    lastName += fullName[i]
+                }
+
+
+            }
+
+            console.log(name)
+            console.log(lastName)
+
         }
 
-        console.log(name)
-        console.log(lastName)
-        
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
