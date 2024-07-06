@@ -7,8 +7,8 @@
     <title>Document</title>
     <script>
 
-        function split() {
-            var fullName = "mahsa-soleimanzadeh"
+        function split(fullName) {
+            // var fullName = "mahsa-soleimanzadeh"
             var name = ""
             var lastName = ""
             var flag = false
@@ -28,12 +28,23 @@
 
 
             }
+            return name + " " + lastName
 
-            console.log(name)
-            console.log(lastName)
+
+            // console.log(name)
+            // console.log(lastName)
 
         }
 
+
+        var firstfullName = "mahsa-soleimanzadeh"
+        split(firstfullName)
+        console.log(split(firstfullName))
+
+        
+        var newname = split("zahra-rahimi")
+        console.log(newname)
+        
     </script>
 </head>
 
