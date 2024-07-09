@@ -47,9 +47,55 @@
     console.log('toPrecision:(2)',y.toPrecision(2))
     console.log('toPrecision:(4)',y.toPrecision(4))
 
-
+    // converting
+    // number()
     
+    console.log('number true :', Number(true))
+    console.log('number false :', Number(false))
 
+    console.log('number :', Number("10"))
+    console.log('number :', Number("10.33"))
+    console.log('number :', Number("10 33"))
+    console.log('number :', Number("john"))
+
+
+
+    // arayeha 
+    // sort 
+
+    var array=['mohammad','salar','ali','mary','soren']
+
+    console.log(array)
+
+    array.sort()
+    console.log(array);
+
+    // reverse 
+    var array1=['mohammad','salar','ali','mary','soren']
+    array1.reverse()
+    console.log(array1)
+
+
+    // sort kamtarin-bishtarin 
+    // suudi - az kamtarin 
+    var array3 =['30','14','60','45','81']
+    array3.sort(function(a,b){
+        return a -b 
+    })
+
+    console.log(array3)
+    console.log(array3[0])
+
+
+    // nuzuli az bishtarin 
+    var array4 =['30','14','60','45','81']
+    array4.sort(function(a,b){
+        return b -a 
+    })
+
+
+    console.log(array4)
+    console.log(array4[0])
 
 </script>
 
