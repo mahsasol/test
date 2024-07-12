@@ -24,32 +24,32 @@
     var lowcase = "SOLEIMANZADE , GHORBANPOUR"
     console.log('LowerCase ', lowcase.toLowerCase())
 
-    var txt1= "mahsa "
-    var txt2= "sol"
+    var txt1 = "mahsa "
+    var txt2 = "sol"
     console.log('concat :', txt1.concat(txt2))
 
     // numbers methods 
 
     var tabdil = 22
-    console.log(typeof(tabdil))
-    console.log('to string:', typeof(tabdil.toString()))
+    console.log(typeof (tabdil))
+    console.log('to string:', typeof (tabdil.toString()))
 
-     // toFixed:() 0 to 100 
+    // toFixed:() 0 to 100 
     var x = 9.656
-    console.log('toFixed:()' ,x.toFixed())
-    console.log('toFixed:(0)',x.toFixed(0))
-    console.log('toFixed:(2)',x.toFixed(2))
-    console.log('toFixed:(4)',x.toFixed(4))
-    
+    console.log('toFixed:()', x.toFixed())
+    console.log('toFixed:(0)', x.toFixed(0))
+    console.log('toFixed:(2)', x.toFixed(2))
+    console.log('toFixed:(4)', x.toFixed(4))
+
     // toPrecision:() 1 to 100 
     var y = 9.656
     console.log('toPrecision:()', y.toPrecision())
-    console.log('toPrecision:(2)',y.toPrecision(2))
-    console.log('toPrecision:(4)',y.toPrecision(4))
+    console.log('toPrecision:(2)', y.toPrecision(2))
+    console.log('toPrecision:(4)', y.toPrecision(4))
 
     // converting
     // number()
-    
+
     console.log('number true :', Number(true))
     console.log('number false :', Number(false))
 
@@ -63,7 +63,7 @@
     // arayeha 
     // sort 
 
-    var array=['mohammad','salar','ali','mary','soren']
+    var array = ['mohammad', 'salar', 'ali', 'mary', 'soren']
 
     console.log(array)
 
@@ -71,16 +71,16 @@
     console.log(array);
 
     // reverse 
-    var array1=['mohammad','salar','ali','mary','soren']
+    var array1 = ['mohammad', 'salar', 'ali', 'mary', 'soren']
     array1.reverse()
     console.log(array1)
 
 
     // sort kamtarin-bishtarin 
     // suudi - az kamtarin 
-    var array3 =['30','14','60','45','81']
-    array3.sort(function(a,b){
-        return a -b 
+    var array3 = ['30', '14', '60', '45', '81']
+    array3.sort(function (a, b) {
+        return a - b
     })
 
     console.log(array3)
@@ -88,14 +88,30 @@
 
 
     // nuzuli az bishtarin 
-    var array4 =['30','14','60','45','81']
-    array4.sort(function(a,b){
-        return b -a 
+    var array4 = ['30', '14', '60', '45', '81']
+    array4.sort(function (a, b) {
+        return b - a
     })
 
 
     console.log(array4)
     console.log(array4[0])
+
+    // foreach , map 
+
+    // forEach
+    var array = ['soli', 2, 'mary', 4]
+    var for1 = array.forEach(function (value, index, array) {
+        // return value
+        console.log('foreach', value)
+    })
+    //    map 
+    var array2 = ['soli', 2, 'mary', 4]
+    var for2 = array2.map(function (value, index, array) {
+        return  value
+
+    })
+    console.log('map:' , for2)
 
 </script>
 
