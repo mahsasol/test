@@ -123,3 +123,23 @@
 
     })
     console.log(result)
+
+
+    // find and findindex 
+    // find()
+    var array =[1,3,44,64,24]
+    var result
+
+    result = array.find(function(value){
+        return value > 4
+    })
+    console.log(result)
+
+    // findindex()
+    var array =[1,3,44,64,24]
+    var result
+
+    result = array.findIndex(function(value){
+        return value > 4
+    })
+    console.log(result)
